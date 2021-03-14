@@ -1,4 +1,4 @@
-import {BrowserRouter} from "react-router-dom";
+import {BrowserRouter, Route, Switch} from "react-router-dom";
 import './App.css';
 import './Components/Header/Header';
 import Header from './Components/Header/Header';
@@ -11,7 +11,14 @@ function App() {
     <BrowserRouter>
     <Header/>
     <div className="app">
-    <Container>Movie App</Container>
+    <Container>
+      <Switch>
+        <Route path= '/' component={Trending} exact/>
+        <Route path= '/movies' component={Movies}/>
+        <Route path= '/series' component={Series}/>
+        <Route path= '/search' component={Search}/>
+      </Switch>
+    </Container>
     </div>
 
     <SimpleBottomNavigation/>
