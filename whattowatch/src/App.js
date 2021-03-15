@@ -1,9 +1,13 @@
-import {BrowserRouter, Route, Switch} from "react-router-dom";
+import {BrowserRouter,Route,Switch} from "react-router-dom";
 import './App.css';
 import './Components/Header/Header';
 import Header from './Components/Header/Header';
 import SimpleBottomNavigation from './Components/MainNav';
 import {Container} from "@material-ui/core";
+import Trending from "./Pages/Trending/Trending";
+import Movies from "./Pages/Movies/Movies";
+import Series from "./Pages/Series/Series";
+import Search from "./Pages/Search/Search";
 
 
 function App() {
@@ -20,7 +24,6 @@ function App() {
       </Switch>
     </Container>
     </div>
-
     <SimpleBottomNavigation/>
     </BrowserRouter>
   );
