@@ -1,6 +1,7 @@
 import axios from "axios";
 import {useEffect, useState} from "react";
 import SingleContent from "../../Components/SingleContent/SingleContent";
+import "./Trending.css"
 
 const Trending = () => {
 
