@@ -2,7 +2,6 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Genres from "../../Components/Genres";
 import SingleContent from "../../Components/SingleContent/SingleContent";
-//import useGenre from "../../hooks/useGenre";
 import CustomPagination from "../../Components/Pagination/CustomPagination";
 import useGenres from "../../Hooks/useGenre";
 
